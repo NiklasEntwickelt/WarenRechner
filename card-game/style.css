@@ -1,0 +1,33 @@
+* {
+    -moz-transition : visibility,height,width,left,top,transform 0.8s ease 0s;   
+    -webkit-transition : visibility,height,width,left,top,transform 0.8s ease 0s;   
+   
+}
+
+body {
+     -moz-transition : background 0.2s;
+}
+
+#cardFrame * {
+    z-index: -2;
+}
+
+
+/*code by https://www.w3schools.com/howto/howto_css_image_transparent.asp */
+.cfContainer {
+  position: relative;
+  max-width: 800px; /* Maximum width */
+  margin: 0 auto; /* Center it */
+}
+
+.cfContainer .cfContent {
+  position: absolute; /* Position the background text */
+  bottom: 0; /* At the bottom. Use top:0 to append it to the top */
+  background: rgb(0, 0, 0); /* Fallback color */
+  background: rgba(0, 0, 0, 0.5); /* Black background with 0.5 opacity */
+  color: #f1f1f1; /* Grey text */
+  width: 100%; /* Full width */
+  padding: 20px; /* Some padding */
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+}

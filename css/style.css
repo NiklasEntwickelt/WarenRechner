@@ -1,0 +1,48 @@
+.themeable, .themeable * {
+    transition: background 0.3s;
+}
+
+/* Style the Logo of the Page, with dropshadow and a little animation */
+
+@keyframes bgDrop {
+    0% {transform: translate(0,-10px)}
+    100% {transform: translate(0, 20px);}
+}
+
+.background-image {
+    z-index: -5;
+    margin-top: 20px;
+    filter: drop-shadow(0 0 0.75rem crimson);
+    
+    animation-name: bgDrop;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    animation-duration: 1.5s;
+}
+
+
+/* Styling input fields in TABLE */
+
+.input-transparent {
+    background: white;
+    background: rgba(255,255,255,0.5);
+    color: white;
+    border: 1px solid transparent;
+    border-radius: 10px;
+}
+
+/* Remove little number icon on input in the TABLE */
+
+/* Chrome, Safari, Edge, Opera */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* Firefox */
+input[type=number] {
+  -moz-appearance: textfield;
+}
+
+

@@ -1,0 +1,14 @@
+
+.table-custom tr:nth-child(even) {
+    background: #7cc0d8;
+}
+
+
+.table-custom tr:nth-child(odd) {
+    background: #66b6d2;
+}
+
+.table-custom th {
+    background: #2596be;
+}
+
